@@ -9,7 +9,7 @@ pipeline {
         }
 	stage('upload artifact'){
 	   steps{
-		sh 'docker push ayushl33t/nodeapp-jenkins:v${BUILD_NUMBER}'
+		sh 'sudo docker push ayushl33t/nodeapp-jenkins:v${BUILD_NUMBER}'
 	   }
 
 	}
